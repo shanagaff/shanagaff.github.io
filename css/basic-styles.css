@@ -4,21 +4,22 @@ a {
 }
 
 #navbar {
-    background-color: #1abc9c;
+    background-color: white;
 }
 
 #navbar ul a {
     color: white;
+    color: #1abc9c;
     border-radius: 10px;
 }
 
 #navbar ul a:hover {
-    background-color: #15997e;
+    color: white;
+    background-color: #1abc9c;
 }
 
 .navbar-toggler {
-    filter: brightness(0) invert(1);
-    border: white solid 1px;
+    border: #1abc9c solid 2px;
 }
 
 #logo {
@@ -27,4 +28,9 @@ a {
 
 body {
     padding-top: 100px;
+}
+
+.splitter {
+    background-color: #1abc9c;
+    height: 250px;
 }
