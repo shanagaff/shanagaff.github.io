@@ -1,0 +1,20 @@
+#welcome {
+    background-color: #ebffff;
+    height: 65vh;
+}
+
+#book-call {
+    background-color: #1abc9c;
+    color: white;
+    width: 25%;
+    min-width: fit-content;
+}
+
+#book-call:hover {
+    color: rgb(240,240,240);
+    background-color: #15997e;
+}
+
+#duo-shot {
+    max-height: 500px;
+}
