@@ -10,6 +10,7 @@ a {
 .nav-link {
     color: #1abc9c;
     border-radius: 10px;
+    min-width: fit-content;
 }
 
 .nav-link:hover {
@@ -35,16 +36,48 @@ body {
 }
 
 footer {
-    background-color: #1abc9c;
+    background-color: #0f6553;
     min-height: fit-content;
 }
 
 footer .nav-link {
     color: white;
-    background-color: #1abc9c;
+    background-color: #0f6553;
 }
 
 footer .nav-link:hover {
     color: #1abc9c;
     background-color: white;
+}
+
+.text-teal {
+    color: #1abc9c;
+}
+
+.bg-teal {
+    background-color: #1abc9c;
+}
+
+.btn-teal {
+    background-color: #1abc9c;
+    color: white;
+}
+
+.btn-teal:hover {
+    background-color: #149178;
+    color: white;
+}
+
+.btn-white {
+    background-color: white;
+    color: #1abc9c;
+}
+
+.btn-white:hover {
+    background-color: rgb(245, 245, 245);
+    color: #1abc9c;
+}
+
+.border-teal {
+    border-color: #1abc9c;
 }
