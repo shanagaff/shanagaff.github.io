@@ -7,13 +7,12 @@ a {
     background-color: white;
 }
 
-#navbar ul a {
-    color: white;
+.nav-link {
     color: #1abc9c;
     border-radius: 10px;
 }
 
-#navbar ul a:hover {
+.nav-link:hover {
     color: white;
     background-color: #1abc9c;
 }
@@ -38,4 +37,14 @@ body {
 footer {
     background-color: #1abc9c;
     min-height: fit-content;
+}
+
+footer .nav-link {
+    color: white;
+    background-color: #1abc9c;
+}
+
+footer .nav-link:hover {
+    color: #1abc9c;
+    background-color: white;
 }
