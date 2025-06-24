@@ -32,5 +32,10 @@ body {
 
 .splitter {
     background-color: #1abc9c;
-    height: 250px;
+    min-height: fit-content;
+}
+
+footer {
+    background-color: #1abc9c;
+    min-height: fit-content;
 }
