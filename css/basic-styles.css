@@ -87,3 +87,8 @@ footer .nav-link:hover {
 .border-teal {
     border-color: #1abc9c;
 }
+
+label:has(+ :required)::after {
+    content: " *";
+    color: red;
+}
