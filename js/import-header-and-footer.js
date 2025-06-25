@@ -14,9 +14,17 @@ if (path === "/" || path == "/index.html") {
     .then(response => response.text())
     .then(html => {
         document.getElementById('footer-placeholder').innerHTML = html;
+
+        const currentPage = document.querySelector("#current-page");
+        currentPage.innerHTML = "Home";
     })
     .catch(error => console.error('Error loading HTML:', error));
 } else {
+    const parts = path.split('/').filter(Boolean); // removes empty strings
+    const folderName = formatPageName(parts.length >= 1 ? parts[parts.length - 1] : null);
+
+    console.log("Folder:", folderName);
+
     // Header
     fetch('../header.html')
     .then(response => response.text())
@@ -41,6 +49,11 @@ if (path === "/" || path == "/index.html") {
             img.setAttribute("src", "../" + src);
         }
         });
+
+        if (folderName != null) {
+            const currentPage = document.querySelector("#current-page");
+            currentPage.innerHTML = folderName;
+        }
     });
 
 
@@ -69,4 +82,13 @@ if (path === "/" || path == "/index.html") {
         }
         });
     });
+}
+
+function formatPageName(text) {
+    if (text != null) {
+        return text
+            .split('-')
+            .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+            .join(' '); 
+    }
 }

@@ -28,6 +28,7 @@ a {
 
 body {
     padding-top: 100px;
+    overflow-x: hidden;
 }
 
 .splitter {
@@ -65,6 +66,11 @@ footer .nav-link:hover {
 
 .btn-teal:hover {
     background-color: #149178;
+    color: white;
+}
+
+.btn-teal:active {
+    background-color: #21e8c0;
     color: white;
 }
 
