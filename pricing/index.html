@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Gratefully Active Faithfully Fit</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--Bootstrap Files-->
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <script src="../js/bootstrap.bundle.min.js"></script>
+
+        <!--Import Header and Footer-->
+        <script src="../js/import-header-and-footer.js" defer></script>
+
+        <!--JavaScript-->
+        <script src="../js/pricing.js" defer></script>
+
+        <!--CSS-->
+        <link href="../css/basic-styles.css" rel="stylesheet">
+
+        
+    </head>
+
+    <body>
+        <header id="header-placeholder"></header>
+
+        <main>
+            <div class="container my-5">
+
+                <div class="d-flex justify-content-center">
+                    <div class="btn-group" role="group">
+                        <input type="radio" class="btn-check" name="pricing" id="3-months" autocomplete="off" checked>
+                        <label class="btn btn-outline-secondary" for="3-months">3 Months</label>
+
+                        <input type="radio" class="btn-check" name="pricing" id="6-months" autocomplete="off">
+                        <label class="btn btn-outline-secondary" for="6-months">6 Months</label>
+
+                        <input type="radio" class="btn-check" name="pricing" id="12-months" autocomplete="off">
+                        <label class="btn btn-outline-secondary" for="12-months">12 Months</label>
+                    </div>
+                </div>
+
+
+                <div class="d-none d-md-block mt-4">
+
+                    <table class="table table-bordered text-center align-middle">
+                    <thead class="table-light">
+                        <tr class="">
+                            <th class="bg-white"></th>
+                            <th id="fitness-price1" class="fs-4">$120/month</th>
+                            <th id="nutrition-price1" class="fs-4">$120/month</th>
+                            <th id="combo-price1" class="fs-4">$150/month</th>
+                        </tr>
+                        <tr>
+                        <th>Feature</th>
+                        <th>Fitness Coaching</th>
+                        <th>Nutrition Coaching</th>
+                        <th>Fitness + Nutrition</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td>Personalized Nutrition Plan</td>
+                        <td class="icon-x"></td>
+                        <td class="icon-check"></td>
+                        <td class="icon-check"></td>
+                        </tr>
+                        <tr>
+                        <td>Nutrition Education</td>
+                        <td class="icon-x"></td>
+                        <td class="icon-check"></td>
+                        <td class="icon-check"></td>
+                        </tr>
+                        <tr>
+                        <td>Customized Workout Program</td>
+                        <td class="icon-check"></td>
+                        <td class="icon-x"></td>
+                        <td class="icon-check"></td>
+                        </tr>
+                        <tr>
+                        <td>Exercise Form Guidance</td>
+                        <td class="icon-check"></td>
+                        <td class="icon-x"></td>
+                        <td class="icon-check"></td>
+                        </tr>
+                        <tr>
+                        <td>Daily Accountability</td>
+                        <td class="icon-check"></td>
+                        <td class="icon-check"></td>
+                        <td class="icon-check"></td>
+                        </tr>
+                        <tr>
+                        <td>Weekly Check-Ins</td>
+                        <td class="icon-check"></td>
+                        <td class="icon-check"></td>
+                        <td class="icon-check"></td>
+                        </tr>
+                        <tr>
+                        <td>1:1 Coaching</td>
+                        <td class="icon-check"></td>
+                        <td class="icon-check"></td>
+                        <td class="icon-check"></td>
+                        </tr>
+                        <tr>
+                        <td>Access to NASM Edge App</td>
+                        <td class="icon-check"></td>
+                        <td class="icon-check"></td>
+                        <td class="icon-check"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        <!-- Mobile Cards -->
+        <div class="d-md-none">
+            <div class="row">
+            <div class="col-12 mb-3" id="plan-basic">
+                <h1 id="fitness-price2" class="text-center mt-3"></h1>
+                <div class="card">
+                <div class="card-header text-center fw-bold">Fitness Coaching</div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex justify-content-between align-items-center pe-5">Personalized Nutrition Plan: <span class="icon-x"></span></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center pe-5">Nutrition Education: <span class="icon-x"></span></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center pe-5">Customized Workout Program: <span class="icon-check"></span></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center pe-5">Exercise Form Guidance: <span class="icon-check"></span></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center pe-5">Daily Accountability: <span class="icon-check"></span></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center pe-5">Weekly Check-Ins: <span class="icon-check"></span></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center pe-5">1:1 Coaching: <span class="icon-check"></span></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center pe-5">Access to NASM Edge App: <span class="icon-check"></span></li>
+                </ul>
+                </div>
+            </div>
+            <div class="col-12 mb-3" id="plan-pro">
+                <h1 id="nutrition-price2" class="text-center mt-3"></h1>
+                <div class="card">
+                <div class="card-header text-center fw-bold">Nutrition Coaching</div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex justify-content-between align-items-center pe-5">Personalized Nutrition Plan: <span class="icon-check"></span></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center pe-5">Nutrition Education: <span class="icon-check"></span></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center pe-5">Customized Workout Program: <span class="icon-x"></span></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center pe-5">Exercise Form Guidance: <span class="icon-x"></span></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center pe-5">Daily Accountability: <span class="icon-check"></span></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center pe-5">Weekly Check-Ins: <span class="icon-check"></span></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center pe-5">1:1 Coaching: <span class="icon-check"></span></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center pe-5">Access to NASM Edge App: <span class="icon-check"></span></li>
+                </ul>
+                </div>
+            </div>
+            <div class="col-12 mb-3" id="plan-enterprise">
+                <h1 id="combo-price2" class="text-center mt-3"></h1>
+                <div class="card">
+                <div class="card-header text-center fw-bold">Fitness + Nutrition</div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex justify-content-between align-items-center pe-5">Personalized Nutrition Plan: <span class="icon-check"></span></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center pe-5">Nutrition Education: <span class="icon-check"></span></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center pe-5">Customized Workout Program: <span class="icon-check"></span></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center pe-5">Exercise Form Guidance: <span class="icon-check"></span></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center pe-5">Daily Accountability: <span class="icon-check"></span></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center pe-5">Weekly Check-Ins: <span class="icon-check"></span></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center pe-5">1:1 Coaching: <span class="icon-check"></span></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center pe-5">Access to NASM Edge App: <span class="icon-check"></span></li>
+                </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        </main>
+
+        <footer id="footer-placeholder"></footer>
+    </body>
+</html>

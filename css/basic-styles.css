@@ -92,3 +92,17 @@ label:has(+ :required)::after {
     content: " *";
     color: red;
 }
+
+.icon-x::before {
+    content: "\00D7";
+    color: red;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.icon-check::before {
+    content: "\2713";
+    color: rgb(0,200,0);
+    font-size: 2rem;
+    font-weight: bold;
+}
