@@ -17,6 +17,9 @@ if (path === "/" || path == "/index.html") {
 
         const currentPage = document.querySelector("#current-page");
         currentPage.innerHTML = "Home";
+
+        highlightButton("home");
+
     })
     .catch(error => console.error('Error loading HTML:', error));
 } else {
@@ -54,6 +57,9 @@ if (path === "/" || path == "/index.html") {
             const currentPage = document.querySelector("#current-page");
             currentPage.innerHTML = folderName;
         }
+
+        highlightButton(document.location.pathname);
+
     });
 
 
@@ -91,4 +97,11 @@ function formatPageName(text) {
             .map(word => word.charAt(0).toUpperCase() + word.slice(1))
             .join(' '); 
     }
+}
+
+function highlightButton(pageName) {
+    pageName = pageName.replaceAll("/", "");
+    const button = document.getElementById(pageName);
+    button.style.backgroundColor = "#1abc9c";
+    button.style.color = "white";
 }
