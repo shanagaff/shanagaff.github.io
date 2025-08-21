@@ -16,6 +16,9 @@
 
         <!--CSS-->
         <link href="../css/basic-styles.css" rel="stylesheet">
+
+        <!--JS-->
+        <script src="../js/contact.js" defer></script>
     </head>
 
     <body class="d-flex flex-column min-vh-100">
@@ -23,21 +26,21 @@
 
         <main class="flex-grow-1 container">
             <h1 class="mt-4 text-center d-none d-lg-block">Contact</h1>
-            <div class="mx-auto pt-5 w-75">
-                <form class="mx-auto mb-5 p-4 border rounded-4">
+            <div class="mx-auto mt-5 w-75">
+                <form class="mx-auto mb-5 p-4 border rounded-4" id="contactUs">
                     <div class="mb-3">
                         <label for="name" class="form-label">Name</label>
                         <input type="text" class="form-control" id="name" required>
                     </div>
                     <div class="mb-3">
-                        <label for="email" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="email" required>
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="subject" class="form-control" id="subject" required>
                     </div>
                     <div class="mb-3">
-                        <label for="message" class="form-label">Message</label>
-                        <textarea id="message" class="form-control" rows="3" required></textarea>
+                        <label for="body" class="form-label">Message</label>
+                        <textarea id="body" class="form-control" rows="3" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-teal">Send</button>
+                    <button type="submit" class="btn btn-teal" id="sendButton">Send</button>
                 </form>
             </div>
         </main>
