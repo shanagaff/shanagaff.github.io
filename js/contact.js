@@ -2,6 +2,8 @@ let form = document.getElementById("contactUs");
 
 form.addEventListener("submit", openMail);
 
+const EMAIL = "gratefullyactivefaithfullyfit@gmail.com"
+
 function openMail(e) {
     e.preventDefault();
 
@@ -14,7 +16,7 @@ function openMail(e) {
         return;
     }
 
-    let link = encodeURI(`mailto:talangaff@gmail.com?subject=${name.value} - ${subject.value}&body=${body.value}`);
+    let link = encodeURI(`mailto:${EMAIL}?subject=${name.value} - ${subject.value}&body=${body.value}`);
 
     console.log(link);
 
